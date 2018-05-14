@@ -156,6 +156,7 @@
 .channel {
     color: #9a63b1;
     text-decoration: none !important;
+    text-align: center;
 }
 
 .channel .fab {
@@ -191,10 +192,6 @@
 }
 
 @media (max-width: 768px) {
-    .channel {
-        text-align: center;
-    }
-
     .channel-name {
         display: none;
     }
