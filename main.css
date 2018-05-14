@@ -19,6 +19,7 @@
 
 .header {
     background-color: #dedede;
+    -webkit-print-color-adjust: exact;
 }
 
 .header-inner {
@@ -86,6 +87,7 @@
 
 .progress-bar {
     background-color: #9a63b1;
+    -webkit-print-color-adjust: exact;
 }
 
 .book-title {
@@ -100,6 +102,7 @@
 
 .books {
     background-color: #333;
+    -webkit-print-color-adjust: exact;
     padding-top: 30px;
     padding-bottom: 10px;
     margin-bottom: 60px;
@@ -126,7 +129,7 @@
     text-decoration: none !important;
 }
 
-.channel span {
+.channel .fab {
     margin: 10px;
 }
 
@@ -145,4 +148,43 @@
     height: 60px;
     line-height: 60px;
     background-color: #f5f5f5;
+}
+
+@media (max-width: 576px) {
+    .main-wrapper {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .info {
+        margin: 26px 0 30px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .channel {
+        text-align: center;
+    }
+
+    .channel-name {
+        display: none;
+    }
+}
+
+@media print {
+    .navbar {
+        display: flex;
+    }
+
+    .books {
+        padding: 0;
+    }
+
+    .book-title a {
+        text-decoration: none;
+    }
+
+    .footer {
+        display: none;
+    }
 }
