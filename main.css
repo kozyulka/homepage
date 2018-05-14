@@ -12,9 +12,54 @@
     font-style:normal;
 }
 
+/* OVERRIDE START */
+
 .row {
     font-size: 22px;
     font-family: "garamond-premier-pro-display",serif;
+}
+
+.blockquote {
+    font-family: "garamond-premier-pro-display",serif;
+}
+
+.progress {
+    width: 100%;
+    margin: 5px 10px 5px 0;
+    font-family: "fira-sans",sans-serif;
+    height: 1.5rem;
+    font-size: .85rem;
+}
+
+.progress-bar {
+    background-color: #9a63b1;
+    -webkit-print-color-adjust: exact;
+}
+
+/* OVERRIDE FINISH */
+
+.download {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.download-button {
+    color: #9a64b1;
+    background-color: transparent;
+    background-image: none;
+    font-size: 1.5em;
+}
+
+.download-button:hover,
+.download-button:active {
+    opacity: .5;
+}
+
+.download-button:focus {
+    opacity: .5;
+    box-shadow: none;
 }
 
 .header {
@@ -72,22 +117,6 @@
 
 .section-name span {
     margin-right: 10px;
-}
-.blockquote {
-    font-family: "garamond-premier-pro-display",serif;
-}
-
-.progress {
-    width: 100%;
-    margin: 5px 10px 5px 0;
-    font-family: "fira-sans",sans-serif;
-    height: 1.5rem;
-    font-size: .85rem;
-}
-
-.progress-bar {
-    background-color: #9a63b1;
-    -webkit-print-color-adjust: exact;
 }
 
 .book-title {
