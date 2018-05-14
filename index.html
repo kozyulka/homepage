@@ -15,6 +15,11 @@
 </head>
 
 <body>
+  <div class="download">
+    <button type="button" class="btn download-button" title="Download resume" onclick="download()">
+      <i class="fas fa-arrow-alt-circle-down"></i>
+    </button>
+  </div>
   <div class="navbar navbar-expand-md header">
     <div class="header-inner">
       <div class="row align-items-center">
@@ -182,5 +187,12 @@
       </div>
     </div>
   </footer>
+  <script>
+    function download() {
+      var url = 'https://drive.google.com/uc?export=download&id=17XJQUbHPCCtPh-W9dDslmQxJs_J-1a0b';
+
+      window.open(url);
+    }
+  </script>
 </body>
 </html>
